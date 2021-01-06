@@ -1,5 +1,0 @@
-package sensewebapp
-
-func main() {
-
-}
