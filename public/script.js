@@ -25,3 +25,10 @@ const chart = new frappe.Chart("#chart", {  // or a DOM element,
         regionFill: 1 // default: 0
     },
 })
+
+async function getList(type) {
+    const res = await fetch(`http://localhost:10000/results/${type}/list`)
+    const json = await res.json()
+    console.log(json)
+}
+
